@@ -7,8 +7,6 @@ const app = new Koa()
 const router = new Router()
 
 router.post('/validate', validate)
-router.get('/giftCards', getGiftCards)
-router.post('/giftCards', addGiftCard)
 
 app.use(require('koa-body')())
 app.use(router.routes())
